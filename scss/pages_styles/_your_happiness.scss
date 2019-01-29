@@ -1,0 +1,139 @@
+#your_happiness {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background_your_happiness.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    filter: blur(11px);
+    transform: scale(1.05);
+  }
+  // All blocks
+  .block {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  // Block title
+  .block_title {
+    height: 30%;
+    overflow: hidden;
+    .title {
+      height: calc( 100% - 5vh );
+      float: left;
+      display: block;
+      margin: 5vh 0 0 5vh;
+      width: 50%;
+      color: $white;
+      font-family: $pribambas;
+      text-transform: uppercase;
+      line-height: normal;
+      font-size: 5.5rem;
+    }
+    button {
+      float: right;
+      margin: 5vh 5vh 0 0;
+      font-family: $pribambas;
+      border: 2px solid $white;
+      padding: 15px 55px;
+      background-color: transparent;
+      color: $white;
+      font-size: 1.8rem;
+      border-radius: 30px;
+    }
+  }
+  // Block icons
+  .block_icons {
+    height: 40%;
+    background-image: url("../images/icons_page_happiness.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .test_icon {
+      width: 46%;
+      margin-bottom: 3%;
+      .label {
+        width: 50%;
+        float: left;
+        text-align: center;
+        font-family: $roboto;
+        color: $white;
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          width: 60%;
+          margin: 10px auto;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  // Block buttons
+  .block_buttons {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .button {
+      min-width: 260px;
+      @include buttonGlobal();
+      background: linear-gradient(180deg, #FFFFFF -16.91%, #DADADA 129.13%), #FFFFFF;
+      margin: 0 2%;
+    }
+  }
+  // Block history
+  .block_history {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .history {
+      background-color: transparent;
+      border: none;
+      a {
+        position: relative;
+        text-decoration: none;
+        color: $white;
+        line-height: normal;
+        font-family: $pribambas;
+        text-transform: uppercase;
+        font-size: 3rem;
+        &::before {
+          content: '';
+          display: block;
+          height: 3rem;
+          width: 25px;
+          background-image: url("../images/vector.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          left: 102%;
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+

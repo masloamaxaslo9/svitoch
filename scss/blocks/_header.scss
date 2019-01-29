@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  overflow: auto;
+  width: 24%;
+  height: 100vh;
+  background-color: $yellow_color_header;
+  background-image: url("../../images/houses.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  .logo {
+    a {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .menu {
+    flex: 1;
+    #img_preview {
+      width: 100%;
+      padding: 0 19%;
+      margin-top: -5%;
+    }
+    li {
+      width: 100%;
+      line-height: 1.6;
+      a {
+        font-family: $pribambas;
+        color: $header_text_color;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .head_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    .language_panel {
+      margin-left: 5%;
+      a {
+        font-family: $roboto;
+        padding: 7px;
+        text-decoration: none;
+        color: $header_text_color;
+        border: 1px solid $header_text_color;
+        border-radius: 10px;
+      }
+    }
+    .icon_links {
+      margin-right: 10%;
+      a {
+        text-decoration: none;
+        margin-right: 15px;
+        padding: 5px;
+        display: block;
+        float: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "browser-sync": "*",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-beautify": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-load-plugins": "*",
+    "gulp-notify": "*",
+    "gulp-sass": "*",
+    "gulp-shell": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "jshint": "*",
+    "main-bower-files": "*"
+  },
+  "name": "3",
+  "version": "1.0.0",
+  "description": "example app",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Maslo",
+  "license": "ISC"
+}

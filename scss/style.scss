@@ -1,0 +1,19 @@
+// Other
+@import "other/fonts";                      // Import fonts;
+@import "other/variables";                  // All variables;
+@import "other/global_style";               // Global styles
+@import "other/animations";                 // Animations
+@import "other/mixins";                     // Mixins
+
+// Blocks
+@import "blocks/header";                    // Block header site;
+@import "blocks/content";                   // Block content site
+@import "blocks/footer";                    // Block footer site;
+
+// Pages
+@import "pages_styles/front_page";          // Front Page;
+@import "pages_styles/your_happiness";      // Your Happiness Page;
+@import "pages_styles/story_of_chocolate";  // Story of Chocolate Page;
+@import "pages_styles/qualities";           // Qualities Page;
+@import "pages_styles/article";             // Article Page;
+@import "pages_styles/goodies";             // Goodies Page;

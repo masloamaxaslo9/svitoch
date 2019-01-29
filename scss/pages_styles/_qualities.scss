@@ -1,0 +1,135 @@
+#qualities {
+  width: 100%;
+  height: 100%;
+  .title_page {
+    font-size: 5rem;
+    color: $global_color_text;
+    font-family: $pribambas;
+    line-height: normal;
+    margin-left: 3%;
+    padding: 30px 0 20px 0;
+  }
+  // Qualities
+  .qualities {
+    overflow: auto;
+    padding: 0 15px;
+    .block {
+      overflow: hidden;
+      width: ($width_block_qualities - 2%) * 2;
+      float: right;
+      height: 45vh;
+      position: relative;
+      border-radius: 7px;
+      margin: 1%;
+      &:nth-child(4n+2),
+      &:nth-child(4n+3) {
+        width: $width_block_qualities - 2%;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, #000000 -50.39%, rgba(255, 255, 255, 0) 67.65%);
+        background-blend-mode: multiply, normal;
+      }
+      .photo {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .text {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 2;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        padding: 10px;
+        width: calc( 100% - 34px );
+        height: 100%;
+        float: left;
+        color: $white;
+      }
+      .icon_facebook {
+        padding: 10px;
+        float: left;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  // About
+  .about {
+    overflow: auto;
+    padding: 0 15px;
+    .block {
+      overflow: hidden;
+      width: $width_block_qualities - 2%;
+      height: 35vh;
+      float: left;
+      position: relative;
+      border-radius: 7px;
+      margin: 1%;
+      padding: 20px 10px 10px 10px;
+      background: linear-gradient(180deg, #FDC300 0%, #FDC300 0.03%, rgba(253, 195, 0, 0.43) 276.92%);
+      .text {
+        font-family: $pribambas;
+        line-height: normal;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $white;
+        max-height: 24vh;
+        overflow: auto;
+      }
+      .link {
+        position: absolute;
+        display: block;
+        width: calc( 100% - 20px);
+        bottom: 10px;
+        word-break: break-word;
+        font-family: $roboto;
+        line-height: normal;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+  .virtual_tour {
+    width: 100%;
+    overflow: auto;
+    .tour {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      button {
+        @include buttonGlobal();
+        position: absolute;
+        border-radius: 40px;
+        padding: 0;
+        border: none;
+        top: calc( 50% - 30px );
+        left: calc( 50% - 100px );
+        background-color: $button_yellow_color;
+        a {
+          color: $white;
+          padding-left: 5rem;
+          padding-right: 5rem;
+        }
+      }
+    }
+  }
+}

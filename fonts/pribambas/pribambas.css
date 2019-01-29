@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Pribambas';
+    src: url('Pribambas-Regular.woff2') format('woff2'),
+        url('Pribambas-Regular.woff') format('woff'),
+        url('Pribambas-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pribambas';
+    src: url('Pribambas-Regular_1.woff2') format('woff2'),
+        url('Pribambas-Regular_1.woff') format('woff'),
+        url('Pribambas-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pribambas';
+    src: url('Pribambas-Regular_2.woff2') format('woff2'),
+        url('Pribambas-Regular_2.woff') format('woff'),
+        url('Pribambas-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

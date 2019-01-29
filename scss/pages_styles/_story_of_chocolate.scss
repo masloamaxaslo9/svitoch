@@ -1,0 +1,172 @@
+#story_of_chocolate {
+  .block_display {
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    z-index: 5;
+    background-image: url("../images/front_page_block_1.png");
+    .text {
+      color: $white;
+      font-family: $roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 1.6rem;
+      position: absolute;
+      top: calc(100vh - 8vh - 17% - 180px);
+      left: 5%;
+      p {
+        white-space: nowrap;
+      }
+    }
+    .img_down {
+      position: relative;
+      top: calc( 100% - 48px - 25px );
+      left: calc( 50% - 13px );
+    }
+  }
+   // History block
+  .block_history {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-image: url("../images/background_history.png");
+    }
+    .title {
+      height: 250px;
+      position: relative;
+      z-index: 2;
+      padding: 72px 0 0 5%;
+      @include bigText();
+      p {
+        text-align: left;
+        line-height: 180px;
+      }
+    }
+    .content_history {
+      position: relative;
+      z-index: 2;
+      overflow: auto;
+      background-size: 100% calc( 546vh + 83.3rem );
+      background-repeat: no-repeat;
+      background-image: url("../images/history.png");
+      background-position: 50%;
+      .text_history {
+        white-space: nowrap;
+        font-family: $roboto;
+        line-height: 1.7rem;
+        font-size: 1.4rem;
+        color: $text_history_page;
+      }
+      .text_one {
+        margin-left: 5%;
+      }
+      .text_two {
+        margin: 28vh 0 0 20%;
+      }
+      .text_three {
+        margin: 90vh 0 0 50%;
+      }
+      .text_four {
+        margin: 66vh 0 0 10%;
+      }
+      .text_five {
+        margin: 77vh 0 0 40%;
+      }
+      .text_six {
+        margin: 69vh 0 0 20%;
+      }
+      .text_seven {
+        margin: 39vh 0 0 30%;
+      }
+      .text_eight {
+        margin: 70vh 0 107vh 23%;
+      }
+    }
+    .content_video {
+      z-index: 2;
+      margin: 0 5%;
+      width: 90%;
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+      }
+      .button_load_video {
+        position: absolute;
+        top: calc( 50% - 3rem );
+        left: calc( 50% - 3rem );
+        width: 6rem;
+        height: 6rem;
+        background-color: $button_yellow_color;
+        border-radius: 50%;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: calc( 50% - 1.5rem);
+          left: calc( 50% - 1rem);
+          border-top: 1.5rem solid transparent;
+          border-left: 2.8rem solid $global_color_text;
+          border-bottom: 1.5rem solid transparent;
+        }
+      }
+    }
+    .content_footer {
+      position: relative;
+      padding: 25px;
+      z-index: 2;
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .quality {
+        background-color: transparent;
+        border: none;
+        a {
+          position: relative;
+          text-decoration: none;
+          color: $white;
+          line-height: normal;
+          font-family: $pribambas;
+          text-transform: uppercase;
+          font-size: 3rem;
+          &::before {
+            content: '';
+            display: block;
+            height: 3rem;
+            width: 25px;
+            background-image: url("../images/vector.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 102%;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

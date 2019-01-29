@@ -1,0 +1,35 @@
+// Big text mixin
+@mixin bigText() {
+  font-family: $pribambas;
+  line-height: normal;
+  font-size: 6.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  text-shadow: 0 8.70092px 8.70092px rgba(0, 0, 0, 0.25);
+}
+// Global button mixin
+@mixin buttonGlobal() {
+  border-radius: 40px;
+  padding: 0;
+  border: none;
+  a {
+    padding: 20px 45px 17px 45px;
+    display: block;
+    text-decoration: none;
+    font-family: $pribambas;
+    color: $global_color_text;
+    line-height: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    span {
+      display: block;
+    }
+  }
+  &:nth-child(1) {
+    margin-right: 30px;
+  }
+}
