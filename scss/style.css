@@ -377,7 +377,10 @@ table {
       background-color: transparent;
       color: #fff;
       font-size: 1.8rem;
-      border-radius: 30px; }
+      border-radius: 30px;
+      outline: none; }
+      #your_happiness .block_title button:hover {
+        cursor: pointer; }
   #your_happiness .block_icons {
     height: 40%;
     background-image: url("../images/icons_page_happiness.svg");
@@ -1346,5 +1349,152 @@ table {
           width: 100%;
           height: 1px;
           background-color: #fff; }
+
+.wraper.popap_active .header,
+.wraper.popap_active .content,
+.wraper.popap_active .footer {
+  filter: blur(11px); }
+.wraper .mask_popap {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 90;
+  background: rgba(0, 0, 0, 0.3); }
+  .wraper .mask_popap.active {
+    display: block; }
+.wraper .login_popap {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  right: 3vh;
+  top: 5vh;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.274);
+  border-radius: 12px;
+  flex-direction: column; }
+  .wraper .login_popap.active {
+    display: flex; }
+  .wraper .login_popap .title_popap {
+    font-family: "Pribambas", sans-serif;
+    line-height: normal;
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4E1604; }
+  .wraper .login_popap .exit_popap {
+    position: absolute;
+    right: 20px; }
+  .wraper .login_popap .login_form .form_item {
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .wraper .login_popap .login_form .form_item input {
+      visibility: hidden;
+      width: 28px;
+      height: 28px;
+      z-index: 101; }
+    .wraper .login_popap .login_form .form_item label {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 1rem;
+      color: #501E0C; }
+      .wraper .login_popap .login_form .form_item label::after {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 12px;
+        background-color: white;
+        border: 1px solid #FDC300;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .wraper .login_popap .login_form .form_item label.active::before {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-image: url("../images/icons/checked.svg");
+        position: absolute;
+        top: -2px;
+        left: 4px;
+        border: 1px solid transparent;
+        z-index: 102; }
+  .wraper .login_popap .login_form .form_item_2 {
+    display: flex;
+    flex-direction: column; }
+    .wraper .login_popap .login_form .form_item_2 span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 1rem;
+      text-align: center;
+      color: #501E0C;
+      opacity: 0.25;
+      margin-bottom: 10px; }
+    .wraper .login_popap .login_form .form_item_2 .button_social_link {
+      margin-bottom: 10px;
+      border-radius: 40px;
+      padding: 0;
+      border: none;
+      background-color: #FDC300; }
+      .wraper .login_popap .login_form .form_item_2 .button_social_link a {
+        padding: 20px 45px 17px 45px;
+        display: block;
+        text-decoration: none;
+        font-family: "Pribambas", sans-serif;
+        color: #4E1604;
+        line-height: normal;
+        font-size: 1.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .wraper .login_popap .login_form .form_item_2 .button_social_link a span {
+          display: block; }
+      .wraper .login_popap .login_form .form_item_2 .button_social_link:nth-child(1) {
+        margin-right: 30px; }
+  .wraper .login_popap .login_form .form_item_3 {
+    position: relative; }
+    .wraper .login_popap .login_form .form_item_3 input {
+      margin-bottom: 10px;
+      outline: none;
+      padding: 20px 45px 17px 20px;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      color: #4E1604;
+      line-height: normal;
+      font-size: 1rem;
+      text-align: left;
+      border-radius: 40px;
+      border: 2px solid #FDC300;
+      width: 100%; }
+    .wraper .login_popap .login_form .form_item_3 button {
+      border-radius: 40px;
+      padding: 0;
+      border: none;
+      background-color: #FDC300;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .wraper .login_popap .login_form .form_item_3 button a {
+        padding: 20px 45px 17px 45px;
+        display: block;
+        text-decoration: none;
+        font-family: "Pribambas", sans-serif;
+        color: #4E1604;
+        line-height: normal;
+        font-size: 1.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .wraper .login_popap .login_form .form_item_3 button a span {
+          display: block; }
+      .wraper .login_popap .login_form .form_item_3 button:nth-child(1) {
+        margin-right: 30px; }
 
 /*# sourceMappingURL=style.css.map */

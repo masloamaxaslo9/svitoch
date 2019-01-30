@@ -1,0 +1,141 @@
+.wraper {
+  &.popap_active {
+    .header,
+    .content,
+    .footer {
+      filter: blur(11px);
+    }
+  }
+  .mask_popap {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.3);
+    &.active {
+      display: block;
+    }
+  }
+  .login_popap {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    right: 3vh;
+    top: 5vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.274);
+    border-radius: 12px;
+    flex-direction: column;
+    &.active {
+      display: flex;
+    }
+    // Popap title
+    .title_popap {
+      font-family: $pribambas;
+      line-height: normal;
+      font-size: 2.4rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: $global_color_text;
+    }
+    .exit_popap {
+      position: absolute;
+      right: 20px;
+    }
+    // Popap form
+    .login_form {
+      .form_item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        input {
+          visibility: hidden;
+          width: 28px;
+          height: 28px;
+          z-index: 101;
+        }
+        label {
+          font-family: $roboto;
+          font-style: normal;
+          font-weight: normal;
+          line-height: normal;
+          font-size: 1rem;
+          color: $header_text_color;
+          &::after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 28px;
+            border-radius: 12px;
+            background-color: white;
+            border: 1px solid $button_yellow_color;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &.active {
+            &::before {
+              content: '';
+              display: block;
+              width: 28px;
+              height: 28px;
+              background-image: url("../images/icons/checked.svg");
+              position: absolute;
+              top: -2px;
+              left: 4px;
+              border: 1px solid transparent;
+              z-index: 102;
+
+            }
+          }
+        }
+      }
+      .form_item_2 {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-family: $roboto;
+          font-style: normal;
+          font-weight: normal;
+          line-height: normal;
+          font-size: 1rem;
+          text-align: center;
+          color: $header_text_color;
+          opacity: 0.25;
+          margin-bottom: 10px;
+        }
+        .button_social_link {
+          margin-bottom: 10px;
+          @include buttonGlobal();
+          background-color: $button_yellow_color;
+        }
+      }
+      .form_item_3 {
+        position: relative;
+        input {
+          margin-bottom: 10px;
+          outline: none;
+          padding: 20px 45px 17px 20px;
+          text-decoration: none;
+          font-family: $roboto;
+          color: $global_color_text;
+          line-height: normal;
+          font-size: 1rem;
+          text-align: left;
+          border-radius: 40px;
+          border: 2px solid $button_yellow_color;
+          width: 100%;
+        }
+        button {
+          @include buttonGlobal();
+          background-color: $button_yellow_color;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

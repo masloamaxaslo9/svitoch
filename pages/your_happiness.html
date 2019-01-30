@@ -55,7 +55,7 @@
             <!--Block title-->
             <div class="block block_title">
                 <h1 class="title">Створи сімейний щастєпис просто!</h1>
-                <button>Увійти</button>
+                <button class="login">Увійти</button>
             </div>
             <!--Block icons-->
             <div class="block block_icons">
@@ -105,8 +105,32 @@
             <p><a href="#">Угода користувача про зберігання і обробку даних</a></p>
         </div>
     </footer>
+    <!--Login popap-->
+    <div class="mask_popap"></div>
+    <div class="login_popap">
+        <h2 class="title_popap">Увійти</h2>
+        <a href="#" class="exit_popap">
+            <img src="../images/icons/exit_icon.svg" alt="icon">
+        </a>
+        <form action="#" method="post" class="login_form">
+            <div class="form_item">
+                <input type="checkbox" name="data_info" id="data_info">
+                <label for="data_info">Ознайомлений з умовами збору і обробки даних</label>
+            </div>
+            <div class="form_item_2">
+                <span>Використовуючи</span>
+                <button class="button_social_link facebook"><a href="#">Facebook</a></button>
+                <button class="button_social_link google_plus"><a href="#">Google+</a></button>
+                <span>або</span>
+            </div>
+            <div class="form_item_3">
+                <input type="email" placeholder="Ваша скринька">
+                <button class="button_login"><a href="#">Увійти</a></button>
+            </div>
+        </form>
+    </div>
 </div>
-</body>
+</body> 
 <!--scripts-->
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/main.js"></script>

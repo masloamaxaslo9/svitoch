@@ -50,6 +50,10 @@
       color: $white;
       font-size: 1.8rem;
       border-radius: 30px;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   // Block icons
