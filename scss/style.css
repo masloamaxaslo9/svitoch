@@ -1294,6 +1294,18 @@ table {
           flex: 40%; }
           #goodies .block_seven .block_candy_grid:nth-child(3) .flex_box:nth-child(1) img, #goodies .block_seven .block_candy_grid:nth-child(5) .flex_box:nth-child(1) img, #goodies .block_seven .block_candy_grid:nth-child(7) .flex_box:nth-child(1) img {
             width: 100%; }
+      #goodies .block_seven .block_candy_grid:nth-child(3) {
+        background-image: url("../images/nuts.png");
+        background-repeat: no-repeat;
+        background-position: 100%; }
+      #goodies .block_seven .block_candy_grid:last-child {
+        background-image: url("../images/nuts_two.png");
+        background-repeat: no-repeat;
+        background-position: 100%; }
+        #goodies .block_seven .block_candy_grid:last-child .flex_box:nth-child(1) {
+          flex: 65%; }
+        #goodies .block_seven .block_candy_grid:last-child .flex_box:nth-child(2) {
+          flex: 35%; }
       #goodies .block_seven .block_candy_grid .flex_box {
         display: flex;
         flex-direction: row;

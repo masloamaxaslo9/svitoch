@@ -462,6 +462,22 @@
           }
         }
       }
+      &:nth-child(3) {
+        background-image: url("../images/nuts.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+      }
+      &:last-child {
+        background-image: url("../images/nuts_two.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        .flex_box:nth-child(1) {
+          flex: 65%;
+        }
+        .flex_box:nth-child(2) {
+          flex: 35%;
+        }
+      }
       .flex_box {
         display: flex;
         flex-direction: row;
