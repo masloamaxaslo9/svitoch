@@ -1,0 +1,55 @@
+.actual_adress_popap {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 20vh;
+  left: calc( 50% - 16.5% );
+  width: 33%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.274);
+  border-radius: 12px;
+  flex-direction: column;
+  &.active {
+    display: flex;
+  }
+  // Popap title
+  .title_popap {
+    font-family: $pribambas;
+    line-height: normal;
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $global_color_text;
+  }
+  .actual_adress_form {
+    .form_item_1 {
+      p {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 1.3rem;
+        text-align: center;
+        color: $global_color_text;
+        opacity: 0.5;
+        margin: 10% 0;
+      }
+    }
+    .form_item_2 {
+      display: flex;
+      justify-content: space-around;
+      .button_confirm {
+        @include buttonGlobal();
+        background-color: $button_yellow_color;
+        width: 50%;
+        a {
+          color: $white;
+        }
+        &:nth-child(2) {
+          background-color: #ff4949;
+        }
+      }
+    }
+  }
+}

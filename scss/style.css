@@ -1497,4 +1497,64 @@ table {
       .wraper .login_popap .login_form .form_item_3 button:nth-child(1) {
         margin-right: 30px; }
 
+.actual_adress_popap {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 20vh;
+  left: calc( 50% - 16.5% );
+  width: 33%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.274);
+  border-radius: 12px;
+  flex-direction: column; }
+  .actual_adress_popap.active {
+    display: flex; }
+  .actual_adress_popap .title_popap {
+    font-family: "Pribambas", sans-serif;
+    line-height: normal;
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4E1604; }
+  .actual_adress_popap .actual_adress_form .form_item_1 p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #4E1604;
+    opacity: 0.5;
+    margin: 10% 0; }
+  .actual_adress_popap .actual_adress_form .form_item_2 {
+    display: flex;
+    justify-content: space-around; }
+    .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm {
+      border-radius: 40px;
+      padding: 0;
+      border: none;
+      background-color: #FDC300;
+      width: 50%; }
+      .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm a {
+        padding: 20px 45px 17px 45px;
+        display: block;
+        text-decoration: none;
+        font-family: "Pribambas", sans-serif;
+        color: #4E1604;
+        line-height: normal;
+        font-size: 1.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm a span {
+          display: block; }
+      .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm:nth-child(1) {
+        margin-right: 30px; }
+      .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm a {
+        color: #fff; }
+      .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm:nth-child(2) {
+        background-color: #ff4949; }
+
 /*# sourceMappingURL=style.css.map */
