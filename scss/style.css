@@ -1518,6 +1518,8 @@ table {
     text-align: center;
     text-transform: uppercase;
     color: #4E1604; }
+    .actual_adress_popap .title_popap.active {
+      margin: 70px 0; }
   .actual_adress_popap .actual_adress_form .form_item_1 p {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -1556,5 +1558,7 @@ table {
         color: #fff; }
       .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm:nth-child(2) {
         background-color: #ff4949; }
+        .actual_adress_popap .actual_adress_form .form_item_2 .button_confirm:nth-child(2).closed {
+          display: none; }
 
 /*# sourceMappingURL=style.css.map */

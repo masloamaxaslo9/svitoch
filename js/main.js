@@ -12,6 +12,7 @@ $(document).ready(function(){
         $('.login_popap').removeClass('active');
         $('.mask_popap').removeClass('active');
         $('.wraper').removeClass('popap_active');
+        $('.title_popap').removeClass('active');
         if($('.actual_adress_popap').hasClass('active')) {
             console.log(this);
             $('.actual_adress_popap').removeClass('active');
@@ -39,12 +40,8 @@ $(document).ready(function(){
     });
     // Function for click on link 'YES' popap Actual Adress page Your Happiness
     $('.actual_adress_popap .yes').on('click', function() {
-        $('.actual_adress_popap .title_popap').css('margin', '70px 0').text('Лист з посиланням для продовження реєстрації вже у вас на пошті');
-        $('.actual_adress_popap .form_item_1').css('display', 'none');
+        $(this).removeClass('yes').addClass('open_email');
+        $(this).parent().parent().find('.button_confirm').eq(1).addClass('closed');
+        $('.actual_adress_popap').find('.title_popap').addClass('active');
     });
-    // Function for click on link 'NO' popap Actual Adress page Your Happiness
-    $('.actual_adress_popap').find('.no').click(function() {
-        console.log(this);
-    });
-
 });

@@ -21,6 +21,9 @@
     text-align: center;
     text-transform: uppercase;
     color: $global_color_text;
+    &.active {
+      margin: 70px 0;
+    }
   }
   .actual_adress_form {
     .form_item_1 {
@@ -48,6 +51,9 @@
         }
         &:nth-child(2) {
           background-color: #ff4949;
+          &.closed {
+            display: none;
+          }
         }
       }
     }

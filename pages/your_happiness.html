@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../fonts/pribambas/pribambas.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
 <div class="wraper">
@@ -105,7 +107,7 @@
             <p><a href="#">Угода користувача про зберігання і обробку даних</a></p>
         </div>
     </footer>
-    <div class="mask_popap"></div>
+    <div class="mask_popap" id="mask" v-on:click="onClickMask"></div>
     <!--Login popap-->
     <div class="login_popap">
         <h2 class="title_popap">Увійти</h2>
@@ -130,21 +132,21 @@
         </form>
     </div>
     <!--Actual adress popap (change content windows in js)-->
-    <div class="actual_adress_popap">
-        <h2 class="title_popap">Увійти</h2>
+    <div class="actual_adress_popap" id="popap_vue">
+        <h2 class="title_popap">{{ title_popap }}</h2>
         <form action="#" method="post" class="actual_adress_form">
             <div class="form_item_1">
-                <p>imfkvd@gmail.com</p>
+                <p v-if="seen_text_p">{{ message }}</p>
             </div>
             <div class="form_item_2">
-                <button class="button_confirm"><a href="#" class="yes">Так</a></button>
-                <button class="button_confirm"><a href="#" class="no">Ні</a></button>
+                <button class="button_confirm"><a href="#" class="yes" v-on:click="yesFunc">{{ button_popap }}</a></button>
+                <button class="button_confirm"><a href="#" class="no" v-on:click="noFunc">Ні</a></button>
             </div>
         </form>
     </div>
 </div>
 </body> 
 <!--scripts-->
-<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/vue_app.js"></script>
 <script src="../js/main.js"></script>
 </html>
