@@ -45,3 +45,23 @@
     }
   }
 }
+
+/* Mobile size 320px ($mobile_size) */
+@media all and (max-width: $mobile_size) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    div {
+      margin-bottom: 10px;
+      margin-left: 5%;
+    }
+    .contacts {
+      margin-top: 10px;
+    }
+    .copyright {
+      text-align: left;
+    }
+  }
+}

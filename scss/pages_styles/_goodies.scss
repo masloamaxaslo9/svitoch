@@ -141,6 +141,7 @@
           position: absolute;
           bottom: -90px;
           left: 0;
+          width: 28%;
         }
       }
       &:nth-child(2) {
@@ -190,6 +191,7 @@
           top: -50px;
         }
         .text_one {
+          width: 56%;
           float: left;
           padding: 30% 5% 0 0;
         }
@@ -285,6 +287,7 @@
       position: absolute;
       bottom: 0;
       left: 10%;
+      width: 44%;
     }
   }
   // Block Six
@@ -466,11 +469,13 @@
         background-image: url("../images/nuts.png");
         background-repeat: no-repeat;
         background-position: 100%;
+        background-size: contain;
       }
       &:last-child {
         background-image: url("../images/nuts_two.png");
         background-repeat: no-repeat;
         background-position: 100%;
+        background-size: contain;
         .flex_box:nth-child(1) {
           flex: 65%;
         }
@@ -512,7 +517,7 @@
           width: 25px;
           background-image: url("../images/vector.svg");
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: contain;
           position: absolute;
           left: 102%;
         }

@@ -49,6 +49,7 @@ table {
 // Wraper
 .wraper {
   width: 100%;
+  overflow: auto;
   position: relative;
 }
 
@@ -62,5 +63,35 @@ table {
   &::-webkit-scrollbar-thumb{
     background-color: $scroll_color;
     border-radius: 6px;
+  }
+}
+
+// Mobile font settings
+
+/* Mobile size 320px ($mobile_size) */
+@media all and (max-width: $mobile_size) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Large size 1366px ($large_size) */
+@media all and (max-width: $large_size) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* Large size 1000px ($desktop_size) */
+@media all and (max-width: $desktop_size) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/* Large size 768px ($tablet_size) */
+@media all and (max-width: $tablet_size) {
+  html {
+    font-size: 7px;
   }
 }

@@ -45,3 +45,17 @@ $(document).ready(function(){
         $('.actual_adress_popap').find('.title_popap').addClass('active');
     });
 });
+
+// Response js //
+// Active menu
+$(document).ready(function(){
+    $('.button_respons_menu').on('click', function () {
+        $('.header').toggleClass('active');
+    })
+});
+// Menu lang panel
+$(document).ready(function(){
+    $('.header .language_panel a').on('click', function () {
+        $(this).parent().toggleClass('active');
+    })
+});

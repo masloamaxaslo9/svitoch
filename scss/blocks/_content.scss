@@ -4,3 +4,13 @@
   height: 92vh;
   overflow: auto;
 }
+
+
+/* Mobile size 320px ($mobile_size) */
+@media all and (max-width: $mobile_size) {
+  .content {
+    margin-top: 10vh;
+    width: 100%;
+    height: 90vh;
+  }
+}
